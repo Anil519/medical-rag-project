@@ -1,7 +1,13 @@
+# src/process_all_files.py
+
 import os
+import sys
 import json
 import xml.etree.ElementTree as ET
 import pandas as pd
+
+# Fix import path so config and modules can be found
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from modules.chunk_embed import chunk_text, get_embeddings
 from modules import vectorstore
@@ -36,8 +42,7 @@ def read_file(file_path):
 
         elif ext == ".xml":
             tree = ET.parse(file_path)
-            root = tree.getroot()
-            return ET.tostring(root, encoding="unicode")
+            return ET.tostring(tree.getroot(), encoding="unicode")
 
     except Exception as e:
         print(f"❌ Error reading {file_path}: {e}")
@@ -49,10 +54,11 @@ def process_and_store(file_path):
     if not text or text.strip() == "":
         print(f"⚠️ No text extracted from: {file_path}")
         return
+
     chunks = chunk_text(text)
     embeddings = get_embeddings(chunks)
     vectorstore.upsert_chunks(chunks, embeddings)
-    print(f"✅ Stored in vector DB: {file_path}")
+    print(f"✅ Stored {len(chunks)} chunks in ChromaDB: {file_path}")
 
 def process_all_files(folder_path="./data/"):
     if not os.path.exists(folder_path):

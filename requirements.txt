@@ -13,13 +13,15 @@ pytest
 python-dotenv
 sentence-transformers
 slowapi
-torch
-transformers
+torch>=2.0.0
+transformers>=4.41.0
 uvicorn
 
-# Newly added:
+# File processing:
 python-docx
 pandas
-openpyxl        # Needed for reading .xlsx with pandas
-PyMuPDF         # For reading PDFs
+openpyxl
+PyMuPDF
+
+# Vector DB:
 chromadb
