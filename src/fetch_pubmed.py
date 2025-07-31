@@ -45,8 +45,8 @@ async def fetch_pubmed_data(query, max_results=100, batch_size=20):
         batch_results = await asyncio.gather(*tasks)
         for batch in batch_results:
             data.extend(batch)
-    
-    with open("pubmed_data.json", "w") as f:
+    os.makedirs("./data", exist_ok=True)
+    with open("./data/pubmed_data.json", "w") as f:
         json.dump(data, f, indent=4)
     logging.info(f"Fetched and saved {len(data)} PubMed articles.")
 

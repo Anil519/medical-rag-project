@@ -4,6 +4,7 @@ import json
 import logging
 from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
@@ -35,7 +36,8 @@ async def fetch_pubchem_data(query, max_results=50, batch_size=10):
         results = await asyncio.gather(*tasks)
         data = [res for res in results if res]
     
-    with open("pubchem_data.json", "w") as f:
+    os.makedirs("./data", exist_ok=True)
+    with open("./data/pubchem_data.json", "w") as f:
         json.dump(data, f, indent=4)
     logging.info(f"Fetched and saved {len(data)} PubChem compounds.")
 
