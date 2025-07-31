@@ -1,0 +1,16 @@
+biopython
+pubchempy
+langchain
+langchain-text-splitters
+langchain-pinecone
+langchain-community
+langchain-huggingface
+sentence-transformers
+transformers
+torch
+neo4j
+fastapi
+uvicorn
+python-dotenv
+pytest
+slowapi  # New for rate limiting
