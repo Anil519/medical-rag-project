@@ -1,64 +1,104 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
-from rag_agent import rag_query
 import logging
+import os
 from dotenv import load_dotenv
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_pinecone import PineconeVectorStore
 
+# Load environment variables
 load_dotenv()
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
-                    handlers=[logging.FileHandler("logs/app.log"), logging.StreamHandler()])
-
+# Logging setup
+os.makedirs("logs", exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.FileHandler("logs/app.log"), logging.StreamHandler()]
+)
 feedback_logger = logging.getLogger("feedback")
 feedback_handler = logging.FileHandler("logs/feedback.log")
 feedback_logger.addHandler(feedback_handler)
 feedback_logger.setLevel(logging.INFO)
 
-app = FastAPI()
+# FastAPI app
+app = FastAPI(title="Medical RAG API")
 
+# Rate limiter
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
+# Embedding model
+model_name = "pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb"
+embedder = HuggingFaceEmbeddings(model_name=model_name)
+
+# Pinecone setup
+os.environ["PINECONE_API_KEY"] = os.getenv("PINECONE_API_KEY")
+index_name = "medical-rag-index"
+vectorstore = PineconeVectorStore(index_name=index_name, embedding=embedder)
+
+# Request models
 class Query(BaseModel):
     text: str
 
 class Feedback(BaseModel):
     query: str
     response: str
-    rating: int  # e.g., 1-5
+    rating: int
     comment: str = None
 
+# Vector retrieval
+def retrieve_from_vector(query: str, k: int = 5):
+    try:
+        results = vectorstore.similarity_search(query, k=k)
+        return results or []
+    except Exception as e:
+        logging.error(f"Retrieval error: {str(e)}")
+        return []
+
+def rag_query(query):
+    results = retrieve_from_vector(query)
+    if not results:
+        return "No relevant information found in database."
+    return "\n".join([res.page_content for res in results])
+
+# Health check endpoint
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
 
+# Main POST query API
 @app.post("/query")
 @limiter.limit("5/minute")
-async def handle_query(q: Query):
+async def handle_query(request: Request, q: Query):
     try:
-        response = rag_query(q.text)
+        response_text = rag_query(q.text)
+
         def stream_response():
-            yield response
-        logging.info(f"API query processed: {q.text}")
+            yield response_text
+
+        logging.info(f"Processed query: {q.text}")
         return StreamingResponse(stream_response(), media_type="text/plain")
+
     except Exception as e:
         logging.error(f"API error: {str(e)}")
-        return {"error": str(e), "response": "Fallback: Unable to process query due to internal error."}
+        return {"error": str(e), "response": "Unable to process query."}
 
+# Feedback API
 @app.post("/feedback")
 async def receive_feedback(fb: Feedback):
-    feedback_logger.info(f"Feedback received: Query='{fb.query}', Response='{fb.response}', Rating={fb.rating}, Comment='{fb.comment}'")
+    feedback_logger.info(
+        f"Feedback received: Query='{fb.query}', Response='{fb.response}', "
+        f"Rating={fb.rating}, Comment='{fb.comment}'"
+    )
     return {"status": "feedback logged"}
 
-# Run: uvicorn src.api:app --reload
-# Dockerfile:
-# FROM python:3.12
-# COPY . /app
-# WORKDIR /app
-# RUN pip install -r requirements.txt
-# CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0"]
+# Run the API when executed directly
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True)

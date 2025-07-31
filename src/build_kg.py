@@ -9,18 +9,31 @@ import re
 import logging
 from dotenv import load_dotenv
 import os
-
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[logging.FileHandler("logs/app.log"), logging.StreamHandler()])
-
-extractor = HuggingFacePipeline.from_model_id(
-    model_id="google/medgemma-4b-it",  # Stable as of July 8, 2025 bug fix; for multimodal, use 'google/medgemma-27b-multimodal'
-    task="text-generation",
-    pipeline_kwargs={"max_new_tokens": 200}
+local_model_path="C:/MedGemma/medgemma-4b-it"
+# Load tokenizer and model from local path
+tokenizer = AutoTokenizer.from_pretrained(local_model_path)
+model = AutoModelForCausalLM.from_pretrained(
+    local_model_path,
+    device_map="auto",  # Auto-detect GPU/CPU
+    load_in_8bit=True,  # Quantize to 8-bit (requires bitsandbytes; use load_in_4bit=True for lower memory)
+    trust_remote_code=True  # If needed for custom model configs
 )
 
+# Create the pipeline manually
+extractor_pipe = pipeline(
+    "text-generation",
+    model=model,
+    tokenizer=tokenizer,
+    max_new_tokens=200
+)
+
+# Wrap in HuggingFacePipeline for LangChain compatibility
+extractor = HuggingFacePipeline(pipeline=extractor_pipe)
 driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", os.getenv("NEO4J_PASSWORD")))
 
 def validate_triple(sub, pred, obj):
