@@ -101,4 +101,4 @@ async def receive_feedback(fb: Feedback):
 # Run the API when executed directly
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=False)
