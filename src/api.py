@@ -9,12 +9,19 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_pinecone import PineconeVectorStore
+import warnings
 
 # Load environment variables
 load_dotenv()
 
 # Logging setup
 os.makedirs("logs", exist_ok=True)
+warnings.filterwarnings(
+    "ignore",
+    message="`encoder_attention_mask` is deprecated",
+    category=FutureWarning,
+    module="torch"
+)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
