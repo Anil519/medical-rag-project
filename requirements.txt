@@ -1,16 +1,25 @@
+Pillow
 biopython
-pubchempy
+fastapi
 langchain
-langchain-text-splitters
-langchain-pinecone
 langchain-community
 langchain-huggingface
-sentence-transformers
-transformers
-torch
+langchain-pinecone
+langchain-text-splitters
 neo4j
-fastapi
-uvicorn
-python-dotenv
+pubchempy
+pytesseract
 pytest
-slowapi  # New for rate limiting
+python-dotenv
+sentence-transformers
+slowapi
+torch
+transformers
+uvicorn
+
+# Newly added:
+python-docx
+pandas
+openpyxl        # Needed for reading .xlsx with pandas
+PyMuPDF         # For reading PDFs
+chromadb
