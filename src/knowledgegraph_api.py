@@ -1,15 +1,21 @@
+from fastapi import FastAPI, Query
 from neo4j import GraphDatabase
+from typing import List
 import json
+import uvicorn
 
 # ===== Neo4j Aura Cloud Connection =====
-uri = "neo4j+s://a3c30e36.databases.neo4j.io"  # Replace with Aura URI
-username = "neo4j"  # Default for Aura
-password = "WpfI9Gu3epdkqaMxUZkm3ZbETLH1fHtecXqEiPqpk_I"  # Replace with Aura password
+uri = "neo4j+s://a3c30e36.databases.neo4j.io"
+username = "neo4j"
+password = "WpfI9Gu3epdkqaMxUZkm3ZbETLH1fHtecXqEiPqpk_I"
 
 driver = GraphDatabase.driver(uri, auth=(username, password))
 
+# ===== FastAPI App =====
+app = FastAPI(title="Medical Knowledge Graph API")
+
 # ===== Search Function =====
-def search_disease_or_symptom(tx, user_input):
+def search_disease_or_symptom(tx, user_input: str):
     query = """
     // Check if input is a disease
     MATCH (d:Disease)
@@ -56,15 +62,16 @@ def search_disease_or_symptom(tx, user_input):
         })
     return records
 
-# ===== Run Search =====
-user_input = input("Enter disease name or symptom: ")
+# ===== API Endpoint =====
+@app.get("/knowledgegraphapi")
+def search(query: str = Query(..., description="Disease name or symptom")):
+    with driver.session() as session:
+        results = session.execute_read(search_disease_or_symptom, query)
+    if results:
+        return {"query": query, "results": results}
+    else:
+        return {"query": query, "message": "❌ No data found"}
 
-with driver.session() as session:
-    results = session.execute_read(search_disease_or_symptom, user_input)
-
-if results:
-    print(json.dumps(results, indent=2, ensure_ascii=False))
-else:
-    print("❌ No data found for:", user_input)
-
-driver.close()
+# ===== Run the API =====
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
