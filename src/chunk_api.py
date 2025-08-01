@@ -80,7 +80,7 @@ def health_check():
     return {"status": "ok"}
 
 # Main POST query API
-@app.post("/query")
+@app.post("/chunkapi")
 @limiter.limit("5/minute")
 async def handle_query(request: Request, q: Query):
     try:

@@ -45,7 +45,7 @@ def retrieve_similar_embeddings(query: str, top_k: int = 5):
         })
     return results
 
-@app.post("/retrieve")
+@app.post("/embeddapi")
 def retrieve(request: QueryRequest):
     results = retrieve_similar_embeddings(request.query, request.top_k)
     return {"query": request.query, "results": results}
