@@ -10,6 +10,7 @@ from slowapi.errors import RateLimitExceeded
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_pinecone import PineconeVectorStore
 import warnings
+import uvicorn
 
 # Load environment variables
 load_dotenv()
@@ -107,5 +108,4 @@ async def receive_feedback(fb: Feedback):
 
 # Run the API when executed directly
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run("chunk_api:app", host="0.0.0.0", port=8000, reload=False)
