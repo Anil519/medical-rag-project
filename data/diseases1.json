@@ -1,0 +1,1170 @@
+[
+  {
+    "name": "Tuberculosis",
+    "symptoms": "Cough (sometimes with blood), chest pain, weight loss, night sweats, fever, fatigue",
+    "cause": "Mycobacterium tuberculosis bacteria spread via airborne droplets from coughs or sneezes",
+    "precautions": "BCG vaccination in high-risk areas, wear masks around infected individuals, good ventilation, early detection and isolation",
+    "drugs": "Standard regimen: isoniazid, rifampin, pyrazinamide, ethambutol for 2 months, followed by isoniazid and rifampin for 4 months; new shortened regimens for drug-susceptible TB in some cases",
+    "description": "Infectious disease primarily affecting lungs, but can spread to other organs. Latent TB can become active. Multidrug-resistant strains require longer treatment."
+  },
+  {
+    "name": "Common Cold",
+    "symptoms": "Stuffy or runny nose, sore throat, cough, sneezing, headache, mild fatigue",
+    "cause": "Viruses (mostly rhinoviruses) spread via droplets or contaminated surfaces",
+    "precautions": "Frequent handwashing, avoid touching face, stay away from sick people, wear masks if needed",
+    "drugs": "Symptom relief only: NSAIDs (ibuprofen), decongestants, zinc supplements if started early; antibiotics not effective as it's viral",
+    "description": "Most common viral respiratory infection. No cure or vaccine due to virus variability. Usually self-limiting, resolves in a few days to over a week."
+  },
+  {
+    "name": "Malaria",
+    "symptoms": "Fever, chills, sweating, headache, muscle aches, nausea; severe cases: anemia, seizures, kidney failure, coma",
+    "cause": "Plasmodium parasites transmitted by Anopheles mosquito bites",
+    "precautions": "Use insecticide-treated bed nets, repellents, drain standing water, take prophylactic antimalarials when traveling, vaccination in endemic areas",
+    "drugs": "Artemisinin-based combination therapy (e.g., artemether-lumefantrine), atovaquone-proguanil (Malarone), chloroquine (where sensitive), mefloquine, doxycycline, primaquine or tafenoquine in relapse prevention; choice depends on Plasmodium species and regional drug resistance",
+    "description": "Potentially life-threatening parasitic infection. Early diagnosis and treatment reduce mortality. Drug resistance increasingly common; recent studies show promising new modalities like ivermectin to reduce transmission."
+  },
+  {
+    "name": "Dengue fever",
+    "symptoms": "High fever, severe headache, pain behind eyes, joint/muscle pain, nausea, rash; severe: abdominal pain, vomiting, bleeding, shock",
+    "cause": "Dengue virus transmitted by Aedes mosquitoes",
+    "precautions": "Mosquito repellents, protective clothing, eliminate standing water, dengue vaccine in some high-risk areas",
+    "drugs": "No specific antiviral; supportive care (e.g., fluids, acetaminophen for pain/fever; avoid aspirin/NSAIDs due to bleeding risk); hospitalization for severe cases",
+    "description": "Tropical arboviral disease, also known as breakbone fever. Risk of severe dengue increases with secondary infections. No routine antiviral as of 2025, though candidates like NITD-688 in trials."
+  },
+  {
+    "name": "Diabetes",
+    "symptoms": "Increased thirst, frequent urination, unexplained weight loss, fatigue, blurred vision, slow-healing sores",
+    "cause": "Type 1: autoimmune destruction of insulin-producing cells; Type 2: insulin resistance often due to obesity, genetics, lifestyle factors; other types include gestational and secondary",
+    "precautions": "Maintain healthy weight, balanced diet, regular exercise, monitor blood sugar if at risk, avoid smoking",
+    "drugs": "Type 1: insulin therapy; Type 2: metformin, sulfonylureas, GLP-1 agonists, SGLT2 inhibitors, insulin if needed",
+    "description": "Chronic condition affecting blood sugar regulation. Type 1 typically onset in youth; Type 2 more common in adults. Complications include heart disease, neuropathy. Management focuses on lifestyle and meds."
+  },
+  {
+    "name": "Hypertension",
+    "symptoms": "Often asymptomatic; severe cases: headaches, shortness of breath, nosebleeds, dizziness",
+    "cause": "Primary (essential): genetics, age, lifestyle (diet, inactivity, obesity); secondary: kidney disease, hormonal disorders, medications",
+    "precautions": "Low-sodium diet, regular exercise, maintain healthy weight, limit alcohol, quit smoking, stress management",
+    "drugs": "ACE inhibitors (e.g., lisinopril), beta-blockers (e.g., metoprolol), diuretics (e.g., hydrochlorothiazide), calcium channel blockers (e.g., amlodipine)",
+    "description": "High blood pressure increasing risk of heart disease, stroke. Lifestyle changes first-line; meds if needed. Regular monitoring essential."
+  },
+  {
+    "name": "Asthma",
+    "symptoms": "Wheezing, shortness of breath, chest tightness, coughing (worse at night or with exercise)",
+    "cause": "Chronic airway inflammation; triggers: allergens (pollen, dust mites), irritants (smoke, pollution), infections, exercise, stress, weather",
+    "precautions": "Avoid known triggers, use air purifiers, get flu vaccine, create asthma action plan, regular check-ups",
+    "drugs": "Quick-relief: short-acting beta-agonists (albuterol); long-term: inhaled corticosteroids (fluticasone), long-acting beta-agonists, biologics for severe (e.g., dupilumab)",
+    "description": "Reversible airway obstruction causing attacks. Affects all ages; management improves quality of life. Severe attacks can be life-threatening."
+  },
+  {
+    "name": "Coronavirus disease 2019",
+    "symptoms": "Fever, cough, shortness of breath, loss of taste/smell, fatigue; severe: pneumonia, ARDS",
+    "cause": "SARS-CoV-2 virus via respiratory droplets, aerosols",
+    "precautions": "Vaccination (updated boosters), masks in crowds, hand hygiene, ventilation, social distancing",
+    "drugs": "Mild: supportive (OTC for symptoms); high-risk mild-moderate: antivirals like paxlovid or remdesivir (start early); severe: hospitalization, oxygen, immunomodulators (e.g., abatacept, infliximab for select cases)",
+    "description": "COVID-19, caused global pandemic. Long COVID affects some. Treatments vary by severity; ongoing variants require updated vaccines."
+  },
+  {
+    "name": "Influenza",
+    "symptoms": "Sudden fever, cough, sore throat, muscle aches, headache, fatigue",
+    "cause": "Influenza A or B viruses spread via droplets",
+    "precautions": "Annual vaccination, handwashing, avoid close contact during outbreaks",
+    "drugs": "Antivirals like oseltamivir (Tamiflu) if started within 48 hours; supportive care (rest, fluids)",
+    "description": "Seasonal flu, can lead to complications like pneumonia. Vaccines updated yearly; antivirals reduce severity in high-risk groups."
+  },
+  {
+    "name": "Typhoid Fever",
+    "symptoms": "High fever, headache, fatigue, abdominal pain, diarrhea or constipation, sometimes rash",
+    "cause": "Salmonella enterica serovar Typhi bacteria spread via contaminated food or water or carriers",
+    "precautions": "Vaccination, safe drinking water, good food hygiene (boil, cook, peel or forget), regular handwashing",
+    "drugs": "Ciprofloxacin or ceftriaxone or cefotaxime; alternatives: cefixime, ampicillin, chloramphenicol, trimethoprim-sulfamethoxazole",
+    "description": "Systemic bacterial infection; untreated can be fatal. Antibiotic resistance is common; properly treated fatality ~1%. Chronic carriers may shed bacteria even after recovery."
+  },
+  {
+    "name": "Acinetobacter infections",
+    "symptoms": "Pneumonia symptoms, urinary tract pain, wound inflammation, fever, sepsis",
+    "cause": "Acinetobacter baumannii bacteria, often in healthcare settings",
+    "precautions": "Strict hospital hygiene, handwashing, isolation of infected patients",
+    "drugs": "Colistin, tigecycline, or combination antibiotics; resistance is common",
+    "description": "Opportunistic pathogen causing nosocomial infections, particularly in immunocompromised patients. High mortality in severe cases due to multi-drug resistance."
+  },
+  {
+    "name": "Actinomycosis",
+    "symptoms": "Painful abscesses, fever, weight loss, sinus tracts in jaw or abdomen",
+    "cause": "Actinomyces bacteria, part of normal flora, entering tissues via trauma",
+    "precautions": "Good oral hygiene, avoid trauma to mouth or abdomen",
+    "drugs": "Penicillin G, amoxicillin, or tetracycline for long-term therapy",
+    "description": "Chronic bacterial infection forming abscesses. Often misdiagnosed as cancer. Requires prolonged antibiotic treatment and sometimes surgery."
+  },
+  {
+    "name": "Adenovirus infection",
+    "symptoms": "Fever, sore throat, conjunctivitis, diarrhea, respiratory illness",
+    "cause": "Adenoviruses spread via droplets, fecal-oral route, or contact",
+    "precautions": "Handwashing, avoid close contact with infected, vaccination for military personnel",
+    "drugs": "Supportive care; cidofovir for severe cases",
+    "description": "Common cause of respiratory and eye infections. Usually self-limiting but can be severe in immunocompromised."
+  },
+  {
+    "name": "African sleeping sickness",
+    "symptoms": "Fever, headaches, joint pains, itching, sleep disturbances, coma",
+    "cause": "Trypanosoma brucei parasites transmitted by tsetse fly bites",
+    "precautions": "Insect repellents, protective clothing in endemic areas, vector control",
+    "drugs": "Pentamidine, suramin for early stage; eflornithine, nifurtimox for late stage",
+    "description": "Parasitic disease affecting rural Africa. Untreated leads to death. Recent declines due to control efforts."
+  },
+  {
+    "name": "AIDS",
+    "symptoms": "Flu-like symptoms initially, then opportunistic infections, weight loss, cancers",
+    "cause": "HIV virus destroying immune cells, spread via blood, sex, needles",
+    "precautions": "Safe sex, needle exchange, PrEP, screening blood products",
+    "drugs": "Antiretroviral therapy (ART) like tenofovir, efavirenz combinations",
+    "description": "Advanced stage of HIV infection. With treatment, life expectancy near normal. Global pandemic with ongoing research for cure."
+  },
+  {
+    "name": "Amoebiasis",
+    "symptoms": "Diarrhea, abdominal pain, bloody stool, liver abscess in severe cases",
+    "cause": "Entamoeba histolytica parasite via fecal-oral route",
+    "precautions": "Safe water, hygiene, avoid contaminated food",
+    "drugs": "Metronidazole or tinidazole, followed by paromomycin",
+    "description": "Intestinal infection common in developing countries. Can invade liver causing abscesses."
+  },
+  {
+    "name": "Anaplasmosis",
+    "symptoms": "Fever, headache, muscle pain, chills, nausea",
+    "cause": "Anaplasma phagocytophilum bacteria transmitted by tick bites",
+    "precautions": "Tick repellents, protective clothing, check for ticks",
+    "drugs": "Doxycycline",
+    "description": "Tick-borne illness similar to Lyme disease. Can be severe in elderly or immunocompromised."
+  },
+  {
+    "name": "Angiostrongyliasis",
+    "symptoms": "Headache, stiff neck, tingling, fever, eosinophilic meningitis",
+    "cause": "Angiostrongylus cantonensis parasite from eating raw snails or contaminated produce",
+    "precautions": "Cook food thoroughly, wash vegetables, avoid raw snails",
+    "drugs": "Supportive care, albendazole with steroids for severe cases",
+    "description": "Rat lungworm disease. Mostly in Asia and Pacific, can cause neurological damage."
+  },
+  {
+    "name": "Anisakiasis",
+    "symptoms": "Abdominal pain, nausea, vomiting, allergic reactions",
+    "cause": "Anisakis nematodes from eating raw or undercooked fish",
+    "precautions": "Cook fish thoroughly, freeze at -20°C for 7 days",
+    "drugs": "Endoscopic removal of worm, albendazole",
+    "description": "Foodborne parasitic infection. Common in Japan due to sushi consumption."
+  },
+  {
+    "name": "Anthrax",
+    "symptoms": "Skin lesions, fever, respiratory distress, gastrointestinal bleeding",
+    "cause": "Bacillus anthracis bacteria spores, contact with infected animals",
+    "precautions": "Vaccination for high-risk groups, avoid contact with infected animals",
+    "drugs": "Ciprofloxacin, doxycycline, penicillin",
+    "description": "Zoonotic disease, can be used as bioweapon. Cutaneous form most common, inhalation fatal if untreated."
+  },
+  {
+    "name": "Arcanobacterium haemolyticum infection",
+    "symptoms": "Pharyngitis, rash, fever, lymphadenopathy",
+    "cause": "Arcanobacterium haemolyticum bacteria",
+    "precautions": "Good hygiene, avoid close contact with infected",
+    "drugs": "Penicillin, erythromycin",
+    "description": "Rare cause of throat infection, often in adolescents, mimics strep throat."
+  },
+  {
+    "name": "Argentine hemorrhagic fever",
+    "symptoms": "Fever, headache, muscle pain, bleeding, shock",
+    "cause": "Junin virus transmitted by rodents",
+    "precautions": "Rodent control, vaccine available in Argentina",
+    "drugs": "Ribavirin, supportive care",
+    "description": "Viral hemorrhagic fever endemic to Argentina. High mortality without treatment."
+  },
+  {
+    "name": "Ascariasis",
+    "symptoms": "Abdominal pain, diarrhea, malnutrition, cough if larvae in lungs",
+    "cause": "Ascaris lumbricoides roundworm via fecal-oral route",
+    "precautions": "Sanitation, handwashing, cook vegetables",
+    "drugs": "Albendazole, mebendazole",
+    "description": "Most common soil-transmitted helminth infection. Affects children in poor areas."
+  },
+  {
+    "name": "Aspergillosis",
+    "symptoms": "Cough, chest pain, hemoptysis, fever in invasive form",
+    "cause": "Aspergillus fungi inhaled from environment",
+    "precautions": "Avoid dusty environments for immunocompromised",
+    "drugs": "Voriconazole, amphotericin B",
+    "description": "Fungal infection ranging from allergy to invasive disease in immunocompromised."
+  },
+  {
+    "name": "Astrovirus infection",
+    "symptoms": "Diarrhea, vomiting, fever, abdominal pain",
+    "cause": "Astrovirus spread via fecal-oral route",
+    "precautions": "Handwashing, safe water",
+    "drugs": "Supportive care, rehydration",
+    "description": "Cause of gastroenteritis, especially in children. Self-limiting."
+  },
+  {
+    "name": "Babesiosis",
+    "symptoms": "Fever, chills, fatigue, anemia, jaundice",
+    "cause": "Babesia parasites transmitted by tick bites",
+    "precautions": "Tick prevention, check for ticks",
+    "drugs": "Atovaquone plus azithromycin, clindamycin plus quinine",
+    "description": "Malaria-like illness. Severe in asplenic or immunocompromised patients."
+  },
+  {
+    "name": "Bacillus cereus infection",
+    "symptoms": "Diarrhea or vomiting, abdominal cramps",
+    "cause": "Bacillus cereus bacteria in contaminated food",
+    "precautions": "Proper food cooking and storage",
+    "drugs": "Supportive care, antibiotics rarely needed",
+    "description": "Food poisoning with emetic or diarrheal form. Common in rice dishes."
+  },
+  {
+    "name": "Bacterial meningitis",
+    "symptoms": "Fever, headache, stiff neck, nausea, confusion",
+    "cause": "Bacteria like Neisseria meningitidis, Streptococcus pneumoniae",
+    "precautions": "Vaccination, avoid crowded conditions",
+    "drugs": "Ceftriaxone, vancomycin",
+    "description": "Life-threatening inflammation of meninges. High mortality if untreated."
+  },
+  {
+    "name": "Bacterial pneumonia",
+    "symptoms": "Cough, fever, chest pain, difficulty breathing",
+    "cause": "Bacteria like Streptococcus pneumoniae, Haemophilus influenzae",
+    "precautions": "Pneumococcal vaccine, flu vaccine, handwashing",
+    "drugs": "Amoxicillin, azithromycin, levofloxacin",
+    "description": "Lung infection, common complication of flu. More severe in elderly."
+  },
+  {
+    "name": "Bacterial vaginosis",
+    "symptoms": "Vaginal discharge, odor, itching",
+    "cause": "Imbalance of vaginal bacteria, Gardnerella vaginalis",
+    "precautions": "Avoid douching, safe sex",
+    "drugs": "Metronidazole, clindamycin",
+    "description": "Common vaginal infection. Increases risk of STIs and preterm birth."
+  },
+  {
+    "name": "Bacteroides infection",
+    "symptoms": "Abscesses, fever, abdominal pain",
+    "cause": "Bacteroides fragilis, anaerobic bacteria from gut flora",
+    "precautions": "Good wound care, hygiene",
+    "drugs": "Metronidazole, carbapenems",
+    "description": "Opportunistic anaerobic infections, often in abdomen or wounds."
+  },
+  {
+    "name": "Balantidiasis",
+    "symptoms": "Diarrhea, abdominal pain, weight loss",
+    "cause": "Balantidium coli protozoan via fecal-oral, associated with pigs",
+    "precautions": "Sanitation, avoid contact with pig feces",
+    "drugs": "Tetracycline, metronidazole",
+    "description": "Rare intestinal protozoan infection. More common in pig-raising areas."
+  },
+  {
+    "name": "Bartonellosis",
+    "symptoms": "Fever, swollen lymph nodes, endocarditis in severe",
+    "cause": "Bartonella bacteria transmitted by cat scratches or fleas",
+    "precautions": "Avoid cat scratches, flea control",
+    "drugs": "Azithromycin, doxycycline",
+    "description": "Includes cat-scratch disease and trench fever. Can affect heart valves."
+  },
+  {
+    "name": "Baylisascaris infection",
+    "symptoms": "Nausea, fatigue, vision loss, neurological symptoms",
+    "cause": "Baylisascaris procyonis roundworm from raccoon feces",
+    "precautions": "Avoid contact with raccoon feces, handwashing",
+    "drugs": "Albendazole, steroids",
+    "description": "Rare but serious larval migrans affecting brain and eyes."
+  },
+  {
+    "name": "BK virus infection",
+    "symptoms": "Usually asymptomatic, kidney issues in transplant patients",
+    "cause": "BK polyomavirus, reactivation in immunocompromised",
+    "precautions": "Screening in transplant patients",
+    "drugs": "Reduce immunosuppression, cidofovir",
+    "description": "Causes nephropathy in kidney transplant recipients."
+  },
+  {
+    "name": "Black piedra",
+    "symptoms": "Black nodules on hair shafts",
+    "cause": "Piedraia hortae fungus",
+    "precautions": "Good hair hygiene",
+    "drugs": "Shaving hair, terbinafine",
+    "description": "Fungal infection of hair, common in tropical regions."
+  },
+  {
+    "name": "Blastocystosis",
+    "symptoms": "Diarrhea, abdominal pain, flatulence",
+    "cause": "Blastocystis hominis protozoan, fecal-oral",
+    "precautions": "Safe water, hygiene",
+    "drugs": "Metronidazole, though efficacy debated",
+    "description": "Common intestinal parasite, pathogenicity controversial."
+  },
+  {
+    "name": "Blastomycosis",
+    "symptoms": "Fever, cough, night sweats, skin lesions",
+    "cause": "Blastomyces dermatitidis fungus inhaled from soil",
+    "precautions": "Avoid disturbing soil in endemic areas",
+    "drugs": "Itraconazole, amphotericin B for severe",
+    "description": "Systemic fungal infection, endemic to Midwest US."
+  },
+  {
+    "name": "Bolivian hemorrhagic fever",
+    "symptoms": "Fever, muscle pain, bleeding, shock",
+    "cause": "Machupo virus transmitted by rodents",
+    "precautions": "Rodent control",
+    "drugs": "Ribavirin, supportive care",
+    "description": "Viral hemorrhagic fever endemic to Bolivia."
+  },
+  {
+    "name": "Botulism",
+    "symptoms": "Muscle weakness, blurred vision, difficulty swallowing, paralysis",
+    "cause": "Clostridium botulinum toxin in contaminated food or wounds",
+    "precautions": "Proper canning, avoid honey for infants",
+    "drugs": "Antitoxin, supportive care, penicillin for wound",
+    "description": "Rare but serious neuroparalytic illness. Infant botulism from honey."
+  },
+  {
+    "name": "Brazilian hemorrhagic fever",
+    "symptoms": "Fever, headache, bleeding, jaundice",
+    "cause": "Sabiá virus, arenavirus",
+    "precautions": "Rodent control",
+    "drugs": "Ribavirin",
+    "description": "Rare viral hemorrhagic fever, few cases reported."
+  },
+  {
+    "name": "Brucellosis",
+    "symptoms": "Fever, sweats, joint pain, fatigue",
+    "cause": "Brucella bacteria from unpasteurized dairy or infected animals",
+    "precautions": "Pasteurize milk, vaccination for animals",
+    "drugs": "Doxycycline plus rifampin",
+    "description": "Zoonotic infection, chronic if untreated. Common in Middle East."
+  },
+  {
+    "name": "Bubonic plague",
+    "symptoms": "Swollen lymph nodes, fever, chills, headache",
+    "cause": "Yersinia pestis bacteria transmitted by flea bites",
+    "precautions": "Flea control, avoid rodents",
+    "drugs": "Streptomycin, gentamicin",
+    "description": "Form of plague, historically caused Black Death. Treatable if early."
+  },
+  {
+    "name": "Burkholderia infection",
+    "symptoms": "Pneumonia, abscesses, sepsis",
+    "cause": "Burkholderia cepacia or pseudomallei, soil bacteria",
+    "precautions": "Avoid soil contact in endemic areas",
+    "drugs": "Trimethoprim-sulfamethoxazole, ceftazidime",
+    "description": "Includes melioidosis, difficult to treat in cystic fibrosis patients."
+  },
+  {
+    "name": "Buruli ulcer",
+    "symptoms": "Painless skin ulcers, swelling",
+    "cause": "Mycobacterium ulcerans, possibly from aquatic insects",
+    "precautions": "Protective clothing near water",
+    "drugs": "Rifampin plus streptomycin",
+    "description": "Necrotizing skin infection, common in West Africa."
+  },
+  {
+    "name": "Calicivirus infection",
+    "symptoms": "Vomiting, diarrhea, fever",
+    "cause": "Norovirus or sapovirus, fecal-oral or contact",
+    "precautions": "Handwashing, disinfect surfaces",
+    "drugs": "Supportive care",
+    "description": "Common cause of gastroenteritis outbreaks, e.g., on cruise ships."
+  },
+  {
+    "name": "Campylobacteriosis",
+    "symptoms": "Diarrhea, abdominal pain, fever",
+    "cause": "Campylobacter jejuni from undercooked poultry or contaminated water",
+    "precautions": "Cook meat thoroughly, safe water",
+    "drugs": "Azithromycin, ciprofloxacin",
+    "description": "Common foodborne illness, can lead to Guillain-Barré syndrome."
+  },
+  {
+    "name": "Candidiasis",
+    "symptoms": "Itching, discharge, rash in mucosal areas",
+    "cause": "Candida yeast overgrowth",
+    "precautions": "Good hygiene, control diabetes",
+    "drugs": "Fluconazole, clotrimazole",
+    "description": "Fungal infection, thrush or vaginal yeast infection common."
+  },
+  {
+    "name": "Capillariasis",
+    "symptoms": "Abdominal pain, diarrhea, weight loss",
+    "cause": "Capillaria philippinensis parasite from raw fish",
+    "precautions": "Cook fish thoroughly",
+    "drugs": "Mebendazole, albendazole",
+    "description": "Intestinal nematode infection, endemic in Philippines."
+  },
+  {
+    "name": "Dental caries",
+    "symptoms": "Tooth pain, cavities",
+    "cause": "Streptococcus mutans bacteria from sugar metabolism",
+    "precautions": "Brush teeth, fluoride, low sugar diet",
+    "drugs": "Dental fillings, not drugs",
+    "description": "Tooth decay, most common chronic disease."
+  },
+  {
+    "name": "Carrion's disease",
+    "symptoms": "Fever, anemia, skin warts in chronic phase",
+    "cause": "Bartonella bacilliformis transmitted by sandflies",
+    "precautions": "Insect repellents",
+    "drugs": "Ciprofloxacin, chloramphenicol",
+    "description": "Biphasic illness endemic to Andes. Also called Oroya fever."
+  },
+  {
+    "name": "Cat-scratch disease",
+    "symptoms": "Swollen lymph nodes, fever, fatigue",
+    "cause": "Bartonella henselae from cat scratches",
+    "precautions": "Avoid rough play with cats, flea control",
+    "drugs": "Azithromycin",
+    "description": "Usually self-limiting, rare complications."
+  },
+  {
+    "name": "Cellulitis",
+    "symptoms": "Red, swollen, painful skin, fever",
+    "cause": "Streptococcus or Staphylococcus bacteria entering through skin break",
+    "precautions": "Wound care, hygiene",
+    "drugs": "Cephalexin, dicloxacillin",
+    "description": "Bacterial skin infection, can spread rapidly."
+  },
+  {
+    "name": "Chagas disease",
+    "symptoms": "Swelling at bite site, fever, later heart or digestive issues",
+    "cause": "Trypanosoma cruzi parasite from triatomine bugs",
+    "precautions": "Insecticide spraying, bed nets",
+    "drugs": "Benznidazole, nifurtimox",
+    "description": "American trypanosomiasis, chronic phase affects 30%."
+  },
+  {
+    "name": "Chancroid",
+    "symptoms": "Painful genital ulcers, swollen lymph nodes",
+    "cause": "Haemophilus ducreyi bacteria, sexually transmitted",
+    "precautions": "Safe sex, condom use",
+    "drugs": "Azithromycin, ceftriaxone",
+    "description": "STI common in developing countries, increases HIV risk."
+  },
+  {
+    "name": "Chickenpox",
+    "symptoms": "Itchy rash, fever, headache",
+    "cause": "Varicella-zoster virus spread via droplets or contact",
+    "precautions": "Vaccination, isolation of infected",
+    "drugs": "Acyclovir for severe cases, calamine lotion for itch",
+    "description": "Highly contagious childhood disease. Can reactivate as shingles."
+  },
+  {
+    "name": "Chikungunya",
+    "symptoms": "Fever, severe joint pain, rash",
+    "cause": "Chikungunya virus from mosquito bites",
+    "precautions": "Mosquito repellents, nets",
+    "drugs": "Supportive care, NSAIDs for pain",
+    "description": "Arboviral disease, chronic joint pain in some."
+  },
+  {
+    "name": "Chlamydia infection",
+    "symptoms": "Often asymptomatic, discharge, burning urination",
+    "cause": "Chlamydia trachomatis, sexually transmitted",
+    "precautions": "Safe sex, screening",
+    "drugs": "Azithromycin, doxycycline",
+    "description": "Common STI, can cause infertility if untreated."
+  },
+  {
+    "name": "Chlamydophila pneumoniae infection",
+    "symptoms": "Cough, fever, headache, pneumonia",
+    "cause": "Chlamydia pneumoniae bacteria via droplets",
+    "precautions": "Handwashing, avoid close contact",
+    "drugs": "Doxycycline, azithromycin",
+    "description": "Atypical pneumonia, associated with atherosclerosis."
+  },
+  {
+    "name": "Cholera",
+    "symptoms": "Severe watery diarrhea, vomiting, dehydration",
+    "cause": "Vibrio cholerae bacteria in contaminated water",
+    "precautions": "Safe water, vaccination, sanitation",
+    "drugs": "Oral rehydration, doxycycline",
+    "description": "Acute diarrheal illness, epidemics in poor sanitation areas."
+  },
+  {
+    "name": "Chromoblastomycosis",
+    "symptoms": "Warty skin lesions, itching",
+    "cause": "Fonsecaea fungi from soil trauma",
+    "precautions": "Protective footwear in tropics",
+    "drugs": "Itraconazole, terbinafine",
+    "description": "Chronic fungal skin infection, common in rural workers."
+  },
+  {
+    "name": "Chytridiomycosis",
+    "symptoms": "Not in humans, affects amphibians",
+    "cause": "Batrachochytrium fungi",
+    "precautions": "N/A for humans",
+    "drugs": "N/A",
+    "description": "Fungal disease causing amphibian declines. Not human disease."
+  },
+  {
+    "name": "Clonorchiasis",
+    "symptoms": "Abdominal pain, diarrhea, liver issues",
+    "cause": "Clonorchis sinensis fluke from raw fish",
+    "precautions": "Cook fish",
+    "drugs": "Praziquantel",
+    "description": "Liver fluke infection, risk of cholangiocarcinoma."
+  },
+  {
+    "name": "Clostridioides difficile colitis",
+    "symptoms": "Diarrhea, abdominal pain, fever",
+    "cause": "C. difficile bacteria after antibiotic use",
+    "precautions": "Judicious antibiotic use, handwashing with soap",
+    "drugs": "Vancomycin, fidaxomicin",
+    "description": "Hospital-acquired infection, recurrent in some."
+  },
+  {
+    "name": "Coccidioidomycosis",
+    "symptoms": "Fever, cough, chest pain, rash",
+    "cause": "Coccidioides fungi inhaled from desert soil",
+    "precautions": "Avoid dusty areas in endemic regions",
+    "drugs": "Fluconazole, amphotericin B",
+    "description": "Valley fever, endemic to Southwest US."
+  },
+  {
+    "name": "Colorado tick fever",
+    "symptoms": "Fever, chills, headache, muscle pain",
+    "cause": "Colorado tick fever virus from tick bites",
+    "precautions": "Tick repellents",
+    "drugs": "Supportive care",
+    "description": "Biphasic fever, rare complications."
+  },
+  {
+    "name": "Coxsackie B virus infection",
+    "symptoms": "Fever, rash, meningitis, myocarditis",
+    "cause": "Coxsackie B enterovirus",
+    "precautions": "Handwashing",
+    "drugs": "Supportive care",
+    "description": "Can cause heart inflammation."
+  },
+  {
+    "name": "Creutzfeldt–Jakob disease",
+    "symptoms": "Rapid dementia, muscle jerks, ataxia",
+    "cause": "Prions, sporadic or transmitted",
+    "precautions": "Avoid contaminated tissue",
+    "drugs": "No effective treatment",
+    "description": "Fatal neurodegenerative prion disease."
+  },
+  {
+    "name": "Crimean-Congo hemorrhagic fever",
+    "symptoms": "Fever, muscle pain, bleeding",
+    "cause": "CCHF virus from ticks or animal blood",
+    "precautions": "Tick prevention, safe animal handling",
+    "drugs": "Ribavirin, supportive",
+    "description": "High fatality viral fever."
+  },
+  {
+    "name": "Cryptococcosis",
+    "symptoms": "Headache, fever, lung or CNS infection",
+    "cause": "Cryptococcus neoformans fungus from bird droppings",
+    "precautions": "Avoid bird droppings for immunocompromised",
+    "drugs": "Amphotericin B, fluconazole",
+    "description": "Opportunistic in AIDS patients."
+  },
+  {
+    "name": "Cryptosporidiosis",
+    "symptoms": "Watery diarrhea, stomach cramps",
+    "cause": "Cryptosporidium parasite in water",
+    "precautions": "Safe water, handwashing",
+    "drugs": "Nitazoxanide",
+    "description": "Common waterborne, severe in immunocompromised."
+  },
+  {
+    "name": "Cutaneous larva migrans",
+    "symptoms": "Itchy, serpiginous rash on skin",
+    "cause": "Hookworm larvae from animal feces in soil",
+    "precautions": "Wear shoes on beaches",
+    "drugs": "Albendazole, ivermectin",
+    "description": "Creeping eruption, self-limiting but uncomfortable."
+  },
+  {
+    "name": "Cyclosporiasis",
+    "symptoms": "Diarrhea, loss of appetite, fatigue",
+    "cause": "Cyclospora cayetanensis in contaminated produce",
+    "precautions": "Wash fruits and vegetables",
+    "drugs": "Trimethoprim-sulfamethoxazole",
+    "description": "Foodborne protozoan, outbreaks from berries."
+  },
+  {
+    "name": "Cysticercosis",
+    "symptoms": "Seizures, headaches if in brain",
+    "cause": "Taenia solium larvae from pork tapeworm eggs",
+    "precautions": "Cook pork, sanitation",
+    "drugs": "Albendazole, praziquantel, surgery",
+    "description": "Neurocysticercosis major cause of epilepsy in developing world."
+  },
+  {
+    "name": "Cytomegalovirus infection",
+    "symptoms": "Usually asymptomatic, mononucleosis-like, congenital defects",
+    "cause": "CMV virus, saliva, urine, blood",
+    "precautions": "Handwashing, screen blood",
+    "drugs": "Ganciclovir, valganciclovir",
+    "description": "Common, dangerous for fetuses and immunocompromised."
+  },
+  {
+    "name": "Desmodesmus infection",
+    "symptoms": "Eye irritation, respiratory issues from algae blooms",
+    "cause": "Desmodesmus green algae",
+    "precautions": "Avoid contaminated water",
+    "drugs": "Supportive",
+    "description": "Rare algal infection, more environmental."
+  },
+  {
+    "name": "Dientamoebiasis",
+    "symptoms": "Diarrhea, abdominal pain",
+    "cause": "Dientamoeba fragilis protozoan",
+    "precautions": "Hygiene",
+    "drugs": "Metronidazole",
+    "description": "Intestinal parasite, often asymptomatic."
+  },
+  {
+    "name": "Diphtheria",
+    "symptoms": "Sore throat, fever, pseudomembrane, heart issues",
+    "cause": "Corynebacterium diphtheriae bacteria",
+    "precautions": "DTaP vaccination",
+    "drugs": "Antitoxin, erythromycin",
+    "description": "Preventable by vaccine, toxin-producing."
+  },
+  {
+    "name": "Diphyllobothriasis",
+    "symptoms": "Abdominal discomfort, vitamin B12 deficiency",
+    "cause": "Diphyllobothrium latum tapeworm from raw fish",
+    "precautions": "Cook fish",
+    "drugs": "Praziquantel",
+    "description": "Fish tapeworm, longest human parasite."
+  },
+  {
+    "name": "Dracunculiasis",
+    "symptoms": "Painful blister, worm emerging from skin",
+    "cause": "Dracunculus medinensis from contaminated water",
+    "precautions": "Filter water, case containment",
+    "drugs": "No specific, worm extraction",
+    "description": "Guinea worm disease, near eradication."
+  },
+  {
+    "name": "Eastern equine encephalitis",
+    "symptoms": "Fever, headache, encephalitis",
+    "cause": "EEE virus from mosquitoes",
+    "precautions": "Mosquito protection",
+    "drugs": "Supportive",
+    "description": "Rare but high mortality neuroinvasive disease."
+  },
+  {
+    "name": "Ebola hemorrhagic fever",
+    "symptoms": "Fever, bleeding, organ failure",
+    "cause": "Ebola virus from bats or infected humans",
+    "precautions": "Isolation, PPE, vaccine",
+    "drugs": "Monoclonal antibodies, supportive",
+    "description": "High fatality, outbreaks in Africa."
+  },
+  {
+    "name": "Echinococcosis",
+    "symptoms": "Cysts in liver or lungs, pain, rupture shock",
+    "cause": "Echinococcus tapeworm from dog feces",
+    "precautions": "Deworm dogs, hygiene",
+    "drugs": "Albendazole, surgery",
+    "description": "Hydatid disease, slow-growing cysts."
+  },
+  {
+    "name": "Ehrlichiosis",
+    "symptoms": "Fever, headache, muscle aches",
+    "cause": "Ehrlichia bacteria from ticks",
+    "precautions": "Tick prevention",
+    "drugs": "Doxycycline",
+    "description": "Tick-borne, similar to anaplasmosis."
+  },
+  {
+    "name": "Enterobiasis",
+    "symptoms": "Anal itching, insomnia",
+    "cause": "Enterobius vermicularis pinworm",
+    "precautions": "Handwashing, clean bedding",
+    "drugs": "Mebendazole, pyrantel pamoate",
+    "description": "Common in children, eggs airborne."
+  },
+  {
+    "name": "Enterococcus infection",
+    "symptoms": "UTI, endocarditis, sepsis",
+    "cause": "Enterococcus faecalis or faecium, nosocomial",
+    "precautions": "Hygiene in hospitals",
+    "drugs": "Vancomycin, linezolid for VRE",
+    "description": "Antibiotic-resistant, common in healthcare."
+  },
+  {
+    "name": "Enterovirus infection",
+    "symptoms": "Rash, meningitis, respiratory illness",
+    "cause": "Enteroviruses like poliovirus, coxsackie",
+    "precautions": "Handwashing",
+    "drugs": "Supportive",
+    "description": "Includes polio, hand-foot-mouth."
+  },
+  {
+    "name": "Epidemic typhus",
+    "symptoms": "High fever, rash, delirium",
+    "cause": "Rickettsia prowazekii from lice",
+    "precautions": "Avoid overcrowding, hygiene",
+    "drugs": "Doxycycline",
+    "description": "Louse-borne, historical epidemics."
+  },
+  {
+    "name": "Erythema infectiosum",
+    "symptoms": "Slapped cheek rash, joint pain",
+    "cause": "Parvovirus B19",
+    "precautions": "Handwashing",
+    "drugs": "Supportive",
+    "description": "Fifth disease, dangerous for pregnant women."
+  },
+  {
+    "name": "Exanthem subitum",
+    "symptoms": "High fever followed by rash",
+    "cause": "Human herpesvirus 6 or 7",
+    "precautions": "Handwashing",
+    "drugs": "Supportive",
+    "description": "Roseola infantum, common in infants."
+  },
+  {
+    "name": "Fasciolasis",
+    "symptoms": "Abdominal pain, fever, jaundice",
+    "cause": "Fasciola hepatica fluke from water plants",
+    "precautions": "Cook vegetables",
+    "drugs": "Triclabendazole",
+    "description": "Liver fluke, chronic liver damage."
+  },
+  {
+    "name": "Fasciolopsiasis",
+    "symptoms": "Diarrhea, abdominal pain, edema",
+    "cause": "Fasciolopsis buski fluke from water plants",
+    "precautions": "Cook aquatic plants",
+    "drugs": "Praziquantel",
+    "description": "Intestinal fluke, Asia endemic."
+  },
+  {
+    "name": "Fatal familial insomnia",
+    "symptoms": "Insomnia, ataxia, dementia",
+    "cause": "Prion, genetic",
+    "precautions": "Genetic counseling",
+    "drugs": "No treatment",
+    "description": "Rare inherited prion disease, fatal."
+  },
+  {
+    "name": "Filariasis",
+    "symptoms": "Swelling, lymphedema, elephantiasis",
+    "cause": "Filarial worms from mosquitoes",
+    "precautions": "Mosquito nets, mass drug administration",
+    "drugs": "Diethylcarbamazine, ivermectin",
+    "description": "Lymphatic filariasis, major cause of disability."
+  },
+  {
+    "name": "Food poisoning by Clostridium perfringens",
+    "symptoms": "Abdominal cramps, diarrhea",
+    "cause": "Clostridium perfringens in undercooked meat",
+    "precautions": "Proper cooking, reheating",
+    "drugs": "Supportive",
+    "description": "Common foodborne, self-limiting."
+  },
+  {
+    "name": "Free-living amebic infection",
+    "symptoms": "Meningoencephalitis, skin lesions",
+    "cause": "Naegleria fowleri or Acanthamoeba in water",
+    "precautions": "Avoid warm freshwater in nose",
+    "drugs": "Amphotericin B, miltefosine",
+    "description": "Brain-eating amoeba, high fatality."
+  },
+  {
+    "name": "Fusobacterium infection",
+    "symptoms": "Throat infection, abscesses",
+    "cause": "Fusobacterium necrophorum, Lemierre's syndrome",
+    "precautions": "Good oral hygiene",
+    "drugs": "Penicillin, metronidazole",
+    "description": "Anaerobic, can cause thrombophlebitis."
+  },
+  {
+    "name": "Gas gangrene",
+    "symptoms": "Pain, swelling, gas in tissues, shock",
+    "cause": "Clostridium perfringens in wounds",
+    "precautions": "Wound debridement",
+    "drugs": "Penicillin, hyperbaric oxygen",
+    "description": "Life-threatening, requires amputation sometimes."
+  },
+  {
+    "name": "Geotrichosis",
+    "symptoms": "Oral or pulmonary infection",
+    "cause": "Geotrichum candidum fungus",
+    "precautions": "For immunocompromised",
+    "drugs": "Amphotericin B",
+    "description": "Rare opportunistic fungal."
+  },
+  {
+    "name": "Gerstmann-Sträussler-Scheinker syndrome",
+    "symptoms": "Ataxia, dementia",
+    "cause": "Prion, genetic",
+    "precautions": "Genetic counseling",
+    "drugs": "No treatment",
+    "description": "Rare prion disease."
+  },
+  {
+    "name": "Giardiasis",
+    "symptoms": "Diarrhea, gas, greasy stools",
+    "cause": "Giardia lamblia in contaminated water",
+    "precautions": "Filter water, hygiene",
+    "drugs": "Metronidazole",
+    "description": "Beaver fever, common traveler's diarrhea."
+  },
+  {
+    "name": "Glanders",
+    "symptoms": "Fever, ulcers, pneumonia",
+    "cause": "Burkholderia mallei from horses",
+    "precautions": "Animal control",
+    "drugs": "Sulfadiazine, ceftazidime",
+    "description": "Zoonotic, potential bioweapon."
+  },
+  {
+    "name": "Gnathostomiasis",
+    "symptoms": "Migratory swelling, pain",
+    "cause": "Gnathostoma nematodes from raw fish",
+    "precautions": "Cook food",
+    "drugs": "Albendazole, surgery",
+    "description": "Larval migrans in skin or eyes."
+  },
+  {
+    "name": "Gonorrhea",
+    "symptoms": "Discharge, burning urination, infertility",
+    "cause": "Neisseria gonorrhoeae, STI",
+    "precautions": "Condoms, screening",
+    "drugs": "Ceftriaxone, azithromycin",
+    "description": "Common STI, increasing resistance."
+  },
+  {
+    "name": "Granuloma inguinale",
+    "symptoms": "Genital ulcers",
+    "cause": "Klebsiella granulomatis, STI",
+    "precautions": "Safe sex",
+    "drugs": "Azithromycin",
+    "description": "Donovanosis, rare in developed countries."
+  },
+  {
+    "name": "Group A streptococcal infection",
+    "symptoms": "Strep throat, scarlet fever, necrotizing fasciitis",
+    "cause": "Streptococcus pyogenes",
+    "precautions": "Handwashing",
+    "drugs": "Penicillin",
+    "description": "Can cause rheumatic fever."
+  },
+  {
+    "name": "Group B streptococcal infection",
+    "symptoms": "Meningitis in newborns, sepsis",
+    "cause": "Streptococcus agalactiae",
+    "precautions": "Screen pregnant women",
+    "drugs": "Penicillin",
+    "description": "Perinatal transmission common."
+  },
+  {
+    "name": "Haemophilus influenzae infection",
+    "symptoms": "Meningitis, pneumonia, epiglottitis",
+    "cause": "Haemophilus influenzae bacteria",
+    "precautions": "Hib vaccine",
+    "drugs": "Ceftriaxone",
+    "description": "Type b preventable by vaccine."
+  },
+  {
+    "name": "Hand, foot and mouth disease",
+    "symptoms": "Rash on hands, feet, mouth sores",
+    "cause": "Coxsackievirus",
+    "precautions": "Handwashing",
+    "drugs": "Supportive",
+    "description": "Common in children, self-limiting."
+  },
+  {
+    "name": "Hantavirus Pulmonary Syndrome",
+    "symptoms": "Fever, muscle aches, respiratory failure",
+    "cause": "Hantavirus from rodent urine",
+    "precautions": "Rodent control",
+    "drugs": "Supportive",
+    "description": "High mortality, Americas endemic."
+  },
+  {
+    "name": "Heartland virus disease",
+    "symptoms": "Fever, fatigue, nausea",
+    "cause": "Heartland virus from ticks",
+    "precautions": "Tick prevention",
+    "drugs": "Supportive",
+    "description": "Emerging tick-borne virus in US."
+  },
+  {
+    "name": "Helicobacter pylori infection",
+    "symptoms": "Stomach pain, ulcers, cancer risk",
+    "cause": "H. pylori bacteria",
+    "precautions": "Hygiene",
+    "drugs": "Amoxicillin, clarithromycin, PPI",
+    "description": "Cause of peptic ulcers."
+  },
+  {
+    "name": "Hemolytic-uremic syndrome",
+    "symptoms": "Diarrhea, kidney failure, anemia",
+    "cause": "E. coli O157:H7 toxin",
+    "precautions": "Cook meat",
+    "drugs": "Supportive, dialysis",
+    "description": "Complication of E. coli infection."
+  },
+  {
+    "name": "Hemorrhagic fever with renal syndrome",
+    "symptoms": "Fever, bleeding, kidney failure",
+    "cause": "Hantaviruses in Asia/Europe",
+    "precautions": "Rodent control",
+    "drugs": "Supportive",
+    "description": "Old World hantavirus disease."
+  },
+  {
+    "name": "Hendra virus infection",
+    "symptoms": "Respiratory illness, encephalitis",
+    "cause": "Hendra virus from bats via horses",
+    "precautions": "Avoid sick horses",
+    "drugs": "Supportive",
+    "description": "Rare, high fatality in Australia."
+  },
+  {
+    "name": "Hepatitis A",
+    "symptoms": "Jaundice, fatigue, nausea",
+    "cause": "HAV virus fecal-oral",
+    "precautions": "Vaccine, hygiene",
+    "drugs": "Supportive",
+    "description": "Acute liver inflammation."
+  },
+  {
+    "name": "Hepatitis B",
+    "symptoms": "Jaundice, chronic liver disease",
+    "cause": "HBV virus blood/sex",
+    "precautions": "Vaccine, safe sex",
+    "drugs": "Tenofovir, interferon",
+    "description": "Can lead to cirrhosis, cancer."
+  },
+  {
+    "name": "Hepatitis C",
+    "symptoms": "Often asymptomatic, chronic liver",
+    "cause": "HCV virus blood",
+    "precautions": "Screen blood, avoid needles",
+    "drugs": "Direct-acting antivirals like sofosbuvir",
+    "description": "Curable now with new drugs."
+  },
+  {
+    "name": "Hepatitis D",
+    "symptoms": "Worsens hepatitis B",
+    "cause": "HDV virus, co-infection with HBV",
+    "precautions": "HBV vaccine",
+    "drugs": "Interferon",
+    "description": "Defective virus requiring HBV."
+  },
+  {
+    "name": "Hepatitis E",
+    "symptoms": "Jaundice, acute hepatitis",
+    "cause": "HEV virus fecal-oral",
+    "precautions": "Safe water",
+    "drugs": "Supportive",
+    "description": "Dangerous for pregnant women."
+  },
+  {
+    "name": "Herpes simplex",
+    "symptoms": "Cold sores, genital ulcers",
+    "cause": "HSV-1 or 2",
+    "precautions": "Safe sex",
+    "drugs": "Acyclovir",
+    "description": "Lifelong latent infection."
+  },
+  {
+    "name": "Histoplasmosis",
+    "symptoms": "Flu-like, lung nodules",
+    "cause": "Histoplasma capsulatum fungus from bird/bat droppings",
+    "precautions": "Avoid caves",
+    "drugs": "Itraconazole",
+    "description": "Ohio Valley fever."
+  },
+  {
+    "name": "Hookworm infection",
+    "symptoms": "Anemia, protein deficiency",
+    "cause": "Necator or Ancylostoma from soil",
+    "precautions": "Wear shoes, sanitation",
+    "drugs": "Albendazole",
+    "description": "Soil-transmitted helminth."
+  },
+  {
+    "name": "Human bocavirus infection",
+    "symptoms": "Respiratory illness in children",
+    "cause": "Human bocavirus",
+    "precautions": "Handwashing",
+    "drugs": "Supportive",
+    "description": "Common in young children."
+  },
+  {
+    "name": "Human ewingii ehrlichiosis",
+    "symptoms": "Fever, headache",
+    "cause": "Ehrlichia ewingii from ticks",
+    "precautions": "Tick prevention",
+    "drugs": "Doxycycline",
+    "description": "Rare ehrlichiosis variant."
+  },
+  {
+    "name": "Human granulocytic anaplasmosis",
+    "symptoms": "Fever, muscle pain",
+    "cause": "Anaplasma phagocytophilum from ticks",
+    "precautions": "Tick prevention",
+    "drugs": "Doxycycline",
+    "description": "Formerly HGE."
+  },
+  {
+    "name": "Human metapneumovirus infection",
+    "symptoms": "Cough, wheezing, fever",
+    "cause": "Human metapneumovirus",
+    "precautions": "Handwashing",
+    "drugs": "Supportive",
+    "description": "Respiratory pathogen in children."
+  },
+  {
+    "name": "Human monocytic ehrlichiosis",
+    "symptoms": "Fever, headache",
+    "cause": "Ehrlichia chaffeensis from ticks",
+    "precautions": "Tick prevention",
+    "drugs": "Doxycycline",
+    "description": "US tick-borne."
+  },
+  {
+    "name": "Human papillomavirus infection",
+    "symptoms": "Warts, cervical cancer",
+    "cause": "HPV viruses",
+    "precautions": "HPV vaccine, safe sex",
+    "drugs": "Topical treatments, surgery",
+    "description": "Common STI, cancer cause."
+  },
+  {
+    "name": "Human parainfluenza virus infection",
+    "symptoms": "Croup, bronchiolitis",
+    "cause": "Parainfluenza viruses",
+    "precautions": "Handwashing",
+    "drugs": "Supportive",
+    "description": "Common childhood respiratory."
+  },
+  {
+    "name": "Human T-lymphotropic virus 1 infection",
+    "symptoms": "Leukemia, myelopathy",
+    "cause": "HTLV-1 virus blood/sex",
+    "precautions": "Screen blood, safe sex",
+    "drugs": "Chemotherapy for leukemia",
+    "description": "Retrovirus, endemic in Japan/Caribbean."
+  },
+  {
+    "name": "Hymenolepiasis",
+    "symptoms": "Abdominal pain, diarrhea",
+    "cause": "Hymenolepis nana tapeworm",
+    "precautions": "Hygiene",
+    "drugs": "Praziquantel",
+    "description": "Dwarf tapeworm, autoinfection."
+  },
+  {
+    "name": "Epstein–Barr virus infectious mononucleosis",
+    "symptoms": "Fever, sore throat, swollen glands",
+    "cause": "EBV virus in saliva",
+    "precautions": "Avoid kissing sick",
+    "drugs": "Supportive",
+    "description": "Kissing disease, linked to lymphomas."
+  },
+  {
+    "name": "Isosporiasis",
+    "symptoms": "Diarrhea, malabsorption",
+    "cause": "Cystoisospora belli protozoan",
+    "precautions": "Safe water",
+    "drugs": "Trimethoprim-sulfamethoxazole",
+    "description": "Opportunistic in AIDS."
+  },
+  {
+    "name": "Japanese encephalitis",
+    "symptoms": "Fever, headache, encephalitis",
+    "cause": "JE virus from mosquitoes",
+    "precautions": "Vaccine, mosquito control",
+    "drugs": "Supportive",
+    "description": "Asia endemic, high mortality."
+  },
+  {
+    "name": "Kawasaki disease",
+    "symptoms": "Fever, rash, strawberry tongue, coronary aneurysms",
+    "cause": "Unknown, possibly infectious trigger",
+    "precautions": "None specific",
+    "drugs": "IVIG, aspirin",
+    "description": "Vasculitis in children, heart complications."
+  },
+  {
+    "name": "Keratitis",
+    "symptoms": "Eye pain, redness, blurred vision",
+    "cause": "Infection by bacteria, virus, fungus in cornea",
+    "precautions": "Contact lens hygiene",
+    "drugs": "Antibiotics or antivirals",
+    "description": "Corneal inflammation, can lead to blindness."
+  },
+  {
+    "name": "Kingella kingae infection",
+    "symptoms": "Arthritis, osteomyelitis in children",
+    "cause": "Kingella kingae bacteria",
+    "precautions": "Hygiene",
+    "drugs": "Beta-lactams",
+    "description": "Common in young children, joint infections."
+  },
+  {
+    "name": "Kuru",
+    "symptoms": "Tremors, ataxia, dementia",
+    "cause": "Prion from cannibalism",
+    "precautions": "Avoid cannibalism",
+    "drugs": "No treatment",
+    "description": "Historical in Papua New Guinea."
+  },
+  {
+    "name": "Lassa fever",
+    "symptoms": "Fever, sore throat, bleeding",
+    "cause": "Lassa virus from rodents",
+    "precautions": "Rodent control",
+    "drugs": "Ribavirin",
+    "description": "West Africa endemic, hemorrhagic."
+  },
+  {
+    "name": "Legionellosis",
+    "symptoms": "Pneumonia, fever, cough",
+    "cause": "Legionella pneumophila in water aerosols",
+    "precautions": "Water system maintenance",
+    "drugs": "Azithromycin, levofloxacin",
+    "description": "Legionnaires' disease, outbreaks from AC."
+  },
+  {
+    "name": "Pontiac fever",
+    "symptoms": "Flu-like, no pneumonia",
+    "cause": "Legionella species",
+    "precautions": "Same as legionellosis",
+    "drugs": "Self-limiting",
+    "description": "Milder form of legionellosis."
+  },
+  {
+    "name": "Leishmaniasis",
+    "symptoms": "Skin sores, visceral organ enlargement",
+    "cause": "Leishmania parasites from sandflies",
+    "precautions": "Sandfly protection",
+    "drugs": "Miltefosine, amphotericin",
+    "description": "Cutaneous or visceral kala-azar."
+  },
+  {
+    "name": "Leprosy",
+    "symptoms": "Skin lesions, nerve damage, numbness",
+    "cause": "Mycobacterium leprae",
+    "precautions": "Early treatment",
+    "drugs": "Dapsone, rifampin, clofazimine",
+    "description": "Hansen's disease, curable but stigmatized."
+  },
+  {
+    "name": "Leptospirosis",
+    "symptoms": "Fever, jaundice, kidney failure",
+    "cause": "Leptospira bacteria from animal urine",
+    "precautions": "Avoid contaminated water",
+    "drugs": "Doxycycline, penicillin",
+    "description": "Weil's disease, after floods."
+  },
+  {
+    "name": "Listeriosis",
+    "symptoms": "Fever, muscle aches, meningitis",
+    "cause": "Listeria monocytogenes in food",
+    "precautions": "Cook meat, avoid unpasteurized",
+    "drugs": "Ampicillin",
+    "description": "Dangerous for pregnant, from deli meats."
+  }
+]
