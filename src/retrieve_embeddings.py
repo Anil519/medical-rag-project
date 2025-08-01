@@ -41,7 +41,7 @@ def retrieve_similar_embeddings(query: str, top_k: int = 5):
     for idx in top_k_indices:
         results.append({
             "score": float(similarities[idx]),
-            "chunk": chunks[idx],
+            "embedding": embeddings[idx].tolist(),
         })
     return results
 
